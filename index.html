@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>FLORES</title>
+</head>
+<body>
+    <div class="greetings">
+        <span>H</span>
+        <span>O</span>
+        <span>L</span>
+        <span>A</span>
+    </div>
+    <div class="greetings">
+        <span>H</span>
+        <span>E</span>
+        <span>R</span>
+        <span>M</span>
+        <span>O</span>
+        <span>S</span>
+        <span>A</span>
+    </div>
+    <div class="description">
+        <span>Tengo un regalo especial para ti!!</span>
+    </div>
+    <div class="button">
+        <button id="btn-iniciar-audio">Podrías Dar Click Acá</button>
+    </div>
+    <script>
+        document.getElementById('btn-iniciar-audio').addEventListener('click', () => {
+            sessionStorage.setItem('audioInteraction', 'true'); // Indica que hubo interacción
+            window.location.href = 'FLORES.html'; // Navegar a FLORES.html
+        });
+    </script>
+</body>
+</html>
